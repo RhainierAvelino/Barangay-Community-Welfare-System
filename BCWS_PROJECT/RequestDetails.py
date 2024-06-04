@@ -91,6 +91,7 @@ submit_button = tk.Button(
     font=("Karla Bold", 12),
     bg="#C8B28E",
     fg="#000000",
+    cursor= "hand2",
     command=submit_request
 )
 submit_button.place(
