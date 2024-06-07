@@ -41,6 +41,7 @@ cal = Calendar(
     year=date.today().year,
     month=date.today().month,
     day=date.today().day,
+    cursor= "hand2",
     date_pattern='mm-dd-yyyy'  # Set the date format
 )
 cal.place(
@@ -88,6 +89,7 @@ submit_button = tk.Button(
     font=("Karla Bold", 12),
     bg="#C8B28E",
     fg="#000000",
+    cursor= "hand2",
     command=submit_feedback
 )
 submit_button.place(
