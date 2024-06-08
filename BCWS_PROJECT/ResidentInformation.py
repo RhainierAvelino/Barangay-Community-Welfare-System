@@ -279,7 +279,7 @@ houseIncome_frame.place(x=518, y=481, width=417, height=42)
 houseIncome = ttk.Combobox(
     houseIncome_frame,
     state="readonly",
-    values=["Below Php. 10,000", "Php. 10,000 - Php. 15,000", "Php. 16,000 - Php. 20,000","Php. 21,000 - Php. 25,000", "Above Php. 25,000"],
+    values=["None","Below Php. 10,000", "Php. 10,000 - Php. 15,000", "Php. 16,000 - Php. 20,000","Php. 21,000 - Php. 25,000", "Above Php. 25,000"],
     font=("Karla Medium", 15)
 )
 houseIncome.place(x=0, y=0, width=412.5, height=38)
