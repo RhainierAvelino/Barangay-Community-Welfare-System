@@ -1,23 +1,20 @@
 
-#try if mag change
 
 from pathlib import Path
 import subprocess
 import sys
-
-# from tkinter import *
-# Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
+
+#change directory based kung saan mo nilagay
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\PYTHON\IM_PROJECT\BCWS_PROJECT\assets_login\frame0")
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 # Close the Login.py and open Sign_up.py
-
 def open_sign_up():
     window.destroy()
     subprocess.Popen(["python", "c:/Users/User/Desktop/PYTHON/IM_PROJECT/BCWS_PROJECT/Sign_up.py"])
@@ -34,6 +31,8 @@ def toggle_entry_visibility():
 window = Tk()
 
 window.geometry("541x792")
+window.title("Login")
+
 window.configure(bg = "#FFFFFF")
 
 
@@ -98,7 +97,7 @@ entry_1 = Entry(
     bg="#FFFFFF",
     fg="#000716",
     highlightthickness=0,
-    font=("Karla Medium", 19) # Show asterisks by default
+    font=("Karla Medium", 19) 
 
 )
 entry_1.place(
@@ -142,6 +141,7 @@ button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
+    cursor= "hand2",
     command=toggle_entry_visibility,  # Toggle visibility on button click
     relief="flat"
 )
@@ -188,6 +188,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
+    cursor= "hand2",
     command=lambda: print("button_1 clicked"),
     relief="flat"
 )
@@ -206,6 +207,7 @@ button_2 = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
+    cursor= "hand2",
     command=open_sign_up,
     relief="flat"
 )
@@ -222,9 +224,10 @@ button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
+    cursor= "hand2",
     command=toggle_entry_visibility,  # Toggle visibility on button click
     relief="flat"
 )
 button_3.place(x=413.0, y=509.0, width=57.0, height=46.0)
-window.resizable(False, False)
+window.resizable(False, True)
 window.mainloop()

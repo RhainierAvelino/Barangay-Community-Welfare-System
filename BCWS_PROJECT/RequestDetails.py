@@ -22,6 +22,7 @@ def submit_request():
 
 window = tk.Tk()
 window.geometry("541x300")
+window.title("Request Assistance")
 window.configure(bg="#F0EAE0")
 
 # Combobox for program offers

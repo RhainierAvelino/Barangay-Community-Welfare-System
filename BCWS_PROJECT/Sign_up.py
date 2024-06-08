@@ -16,7 +16,7 @@ ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\User\Desktop\PYTHON\IM_PROJECT\BCWS_
 def toggle_entry_visibility(event):
     if event.widget == sign_up_entry_1:
         sign_up_entry_1.config(show='*')
-        sign_up_entry_2.config(show='*')
+        sign_up_entry_2.config(shouw='*')
     elif event.widget == sign_up_entry_2:
         sign_up_entry_1.config(show='*')
         sign_up_entry_2.config(show='*')
@@ -245,6 +245,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
+    cursor= "hand2",
     command=lambda: print("sign_up_button_1 clicked"),
     relief="flat"
 )
@@ -262,6 +263,7 @@ button_2 = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
+    cursor= "hand2",
     command=open_login,
     relief="flat"
 )
