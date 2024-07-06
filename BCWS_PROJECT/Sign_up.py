@@ -281,5 +281,5 @@ image_9 = canvas.create_image(
     97.0,
     image=image_image_9
 )
-window.resizable(False, False)
+window.resizable(True, True)
 window.mainloop()

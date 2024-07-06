@@ -10,6 +10,15 @@ def relative_to_assets(path: str) -> Path:
 def on_submit():
     if messagebox.askokcancel("Confirmation", "Please confirm that all the information you provided is accurate and true."):
         print("Form submitted")
+        # Printing the input of the resident
+        print("Full Name:", fullName.get())
+        print("Date of Birth:", dateBirth.get())
+        print("Full Address:", fullAddress.get())
+        print("Contact Number:", contactNo.get())
+        print("Gender:", gender.get())
+        print("Occupation:", occupation.get())
+        print("Marital Status:", maritalStatus_var.get())
+        print("Household Income:", houseIncome.get())
 window = Tk()
 window.geometry("973x633")
 window.title("Resident's Registration Form")
